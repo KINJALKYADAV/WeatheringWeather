@@ -12,6 +12,7 @@ body{
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
 }
 
 p {
@@ -19,12 +20,12 @@ p {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 .app {
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   position: relative;
   background-color: rgba(105, 97, 97, 0.4);
   color: #fff;
@@ -52,16 +53,31 @@ h1 {
   border-radius:15px;
   border: 1px solid rgba(255, 255, 255, 0.8);
   background: hwb(0 96% 0% / 0.1);
-  color: #424242;
+  /*color: #424242;*/
+  color: #110f0f;
+  width: 515px;
 }
-
+.app .search .click{
+  margin-left: 15px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  font-size: 20px;
+  color: #484141;
+}
+.app .search .click:hover{
+  cursor: pointer;
+  background: rgba(214, 218, 221, 0.301);
+}
 ::placeholder {
-  color: #868686;
+  /*color: #868686;*/
+  color: #626262;
 }
 
 .container {
   max-width: 700px;
-  height: 700px;
+  height: auto;
   margin: auto;
   padding: 0 1rem;
   position: relative;
@@ -70,7 +86,11 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
 }
-
+.location p{
+  display: inline;
+  font-size: 2rem;
+  font-weight: 500;
+}
 .app .top {
   width: 100%;
   margin: 1rem auto;
@@ -81,6 +101,7 @@ h1 {
   right: -90%;
   transform-origin: 0 0;
   transform: rotate(270deg);
+  font-size: medium;
 }
 
 .app .bottom {
